@@ -15,6 +15,15 @@ class Program{
         return x * y;
     }
 
+
+    // emum by example
+        enum Level
+        {
+            Easy,
+            Medium,
+            Hard,
+        }
+
     static void Main(string[] args){
 
         // Printing void function
@@ -82,6 +91,30 @@ class Program{
         dogObj.animalSound();
         Cow cowObj = new Cow();
         cowObj.animalSound();
+
+        // Interface Calling
+        Course courseObj = new Course();
+        courseObj.CourseOne();
+        courseObj.CourseTwo();
+
+        
+        // enum Continuation
+
+        Level levelObj = Level.Medium;
+        switch(levelObj){
+            case Level.Easy:
+             Console.WriteLine("Easy Level");
+             break;
+
+            case Level.Medium:
+            Console.WriteLine("Medium Level");
+            break;
+
+            case Level.Hard:
+            Console.WriteLine("Hard Level");
+            break;
+        }
+
 
     }
 }
